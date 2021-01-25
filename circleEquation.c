@@ -6,7 +6,12 @@
 	#include <math.h>
 #endif
 
-int circleDrawerEqu(int, int , int, int);
+
+
+int circleDrawerEqu(int x, int y, int a, int b) {
+	// (x-a)^2 + (y-b)^2 = r^2	where a and b are the center of the circle
+	return sqrt(pow((x-a), 2) + pow((y-b), 2));
+}
 
 int main(int argc, char *argv[]) {
 	int radius = 5;
@@ -59,10 +64,4 @@ int main(int argc, char *argv[]) {
 			system("clear");
 		}
 	#endif
-}
-
-
-int circleDrawerEqu(int x, int y, int a, int b) {
-	// (x-a)^2 + (y-b)^2 = r^	where a and b are the center of the circle
-	return sqrt(pow((x-a), 2) + pow((y-b), 2));
 }
