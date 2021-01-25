@@ -11,3 +11,5 @@ Supported Features
 How to Compile
   * Linux
         -> gcc circleEquation.c -lm -o circleEquation
+  * Windows
+        -> Open up your c/c++ ide and just compile
